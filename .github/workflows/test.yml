@@ -1,0 +1,40 @@
+name: Tests
+
+on: pull_request
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+
+    name: Tests
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          coverage: xdebug
+        # env:
+        #   GITHUB_TOKEN: '${{ secrets.AGICOM_TOKEN }}'
+
+      - name: Install PHP dependencies
+        run: composer install --no-interaction --no-progress --ansi
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Compile assets
+        run: npm run build
+
+      - name: Prepare Laravel
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Tests
+        run: composer test
