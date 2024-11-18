@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: '${{ secrets.COMPOSER_ACCESS }}'
 
       - name: Flux install
-        run: composer config http-basic.composer.fluxui.dev 'danceleste974@gmail.com' '${{FLUX_LICENSE_KEY}}'
+        run: composer config http-basic.composer.fluxui.dev 'danceleste974@gmail.com' '${{ secrets.FLUX_LICENSE_KEY }}'
 
       - name: Install PHP dependencies
         run: composer install --no-interaction --no-progress --ansi
