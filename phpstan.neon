@@ -1,20 +1,21 @@
 includes:
-        - vendor/larastan/larastan/extension.neon
+    - vendor/larastan/larastan/extension.neon
 
-    parameters:
+parameters:
 
-        paths:
-            - app/
+    paths:
+        - app/
 
-        # Level 9 is the highest level
-        level: 5
+    # Level 9 is the highest level
+    level: 5
 
-    #    ignoreErrors:
-    #        - '#PHPDoc tag @var#'
-    #
-    #    excludePaths:
-    #        - ./*/*/FileToBeExcluded.php
-    #
-        inferPrivatePropertyTypeFromConstructor: true
-        checkMissingIterableValueType: true
-        noModelMake: false
+#    ignoreErrors:
+#        - '#PHPDoc tag @var#'
+#
+#    excludePaths:
+#        - ./*/*/FileToBeExcluded.php
+#
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: true
+    checkOctaneCompatibility: true
+    noModelMake: false

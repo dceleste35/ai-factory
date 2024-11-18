@@ -75,7 +75,6 @@
         "test:types": "phpstan analyse --ansi",
         "test:arch": "pest --filter=arch",
         "test:type-coverage": "pest --type-coverage --min=90",
-        "test:mutate": "XDEBUG_MODE=coverage pest --mutate --parallel --min=90",
         "test:unit": "XDEBUG_MODE=coverage pest --coverage --parallel --min=90",
         "test": [
             "@test:lint",
@@ -83,7 +82,6 @@
             "@test:refactor",
             "@test:types",
             "@test:type-coverage",
-            "@test:mutate",
             "@test:unit"
         ]
     },

@@ -19,8 +19,8 @@ jobs:
         with:
           php-version: 8.3
           coverage: xdebug
-        # env:
-        #   GITHUB_TOKEN: '${{ secrets.AGICOM_TOKEN }}'
+        env:
+          GITHUB_TOKEN: '${{ secrets.COMPOSER_ACCESS }}'
 
       - name: Install PHP dependencies
         run: composer install --no-interaction --no-progress --ansi
