@@ -1,4 +1,4 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+import defaultTheme from 'tailwindcss/defaultTheme'
 import aspectRatio from '@tailwindcss/aspect-ratio'
 import containerQueries from '@tailwindcss/container-queries'
 
@@ -11,13 +11,13 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './vendor/livewire/flux-pro/stubs/**/*.blade.php',
+        './vendor/livewire/flux/stubs/**/*.blade.php'
     ],
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
-        },
+        fontFamily: {
+            sans: ['Inter', 'sans-serif']
+        }
     },
-    plugins: [],
-};
+    plugins: []
+}
