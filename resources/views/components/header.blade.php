@@ -55,7 +55,7 @@
 </flux:sidebar>
 
 <flux:header
-    class="block border-b border-zinc-200 bg-white lg:hidden lg:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900"
+    class="block border-b border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-900 lg:hidden lg:bg-zinc-50"
 >
     <flux:navbar class="w-full">
         <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />

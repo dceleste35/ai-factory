@@ -9,7 +9,7 @@
     $invalid ??= $name && $errors->has($name);
 
     $classes = Flux::classes()
-        ->add('block p-3 w-full')
+        ->add('block p-3 w-full focus:outline-none')
         ->add('shadow-sm disabled:shadow-none border rounded-lg')
         ->add('bg-white dark:bg-white/10 dark:disabled:bg-white/[7%]')
         ->add($resize ? 'resize-y' : 'resize-none')
@@ -30,7 +30,7 @@
         data-flux-textarea
         {{ $attributes->class($classes) }}
         rows="{{ $rows }}"
-        style="{{ $resizeStyle }}; {{ $rows === 'auto' ? 'field-sizing: content; min-height: calc(5 * 1.5em);' : '' }}"
+        style="{{ $resizeStyle }}; {{ $rows === 'auto' ? 'field-sizing: content; min-height: calc(5 * 1.5em); max-height: calc(15 * 1.5em);' : '' }}"
         @isset ($name) name="{{ $name }}" @endisset
         @if ($invalid) aria-invalid="true" data-invalid @endif
     >
