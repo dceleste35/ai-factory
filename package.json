@@ -18,6 +18,7 @@
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.0",
         "postcss": "^8.4.49",
+        "postcss-nesting": "^13.0.1",
         "prettier": "^3.3.3",
         "prettier-plugin-blade": "^2.1.19",
         "prettier-plugin-organize-attributes": "^1.0.0",
