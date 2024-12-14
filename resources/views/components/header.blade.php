@@ -9,25 +9,20 @@
         logo="https://fluxui.dev/img/demo/dark-mode-logo.png"
     />
 
-    <flux:navlist variant="outline">
-        <flux:navlist.item href="/lol" :current="request()->routeIs('lol.*')" wire:navigate>
-            <div class="flex items-center space-x-2">
-                {{-- <x-icons.lol /> --}}
-                <p>League of Legend</p>
-            </div>
-        </flux:navlist.item>
-        {{--
-            <flux:navlist.item href="#" icon="inbox" badge="12">Inbox</flux:navlist.item>
-            <flux:navlist.item href="#" icon="document-text">Documents</flux:navlist.item>
-            <flux:navlist.item href="#" icon="calendar">Calendar</flux:navlist.item>
-        --}}
-        {{--
-            <flux:navlist.group class="hidden lg:grid" expandable heading="Favorites">
+    <flux:navlist>
+        <flux:navlist.group class="overflow-hidden" heading="Favoris" expandable>
             <flux:navlist.item href="#">Marketing site</flux:navlist.item>
             <flux:navlist.item href="#">Android app</flux:navlist.item>
-            <flux:navlist.item href="#">Brand guidelines</flux:navlist.item>
-            </flux:navlist.group>
-        --}}
+            <flux:navlist.item href="#">Brand guidelines Brand guidelines Brand guidelines</flux:navlist.item>
+        </flux:navlist.group>
+
+        <flux:navlist.group class="overflow-hidden" heading="Récents" expandable>
+            <flux:navlist.item href="#">Marketing site</flux:navlist.item>
+            <flux:navlist.item href="#">Android app</flux:navlist.item>
+            <flux:navlist.item href="#">Brand guidelines Brand guidelines Brand guidelines</flux:navlist.item>
+        </flux:navlist.group>
+
+        <flux:navlist.item href="#" icon="bars-4">Voir tout</flux:navlist.item>
     </flux:navlist>
 
     <flux:spacer />
