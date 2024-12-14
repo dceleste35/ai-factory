@@ -12,9 +12,16 @@
         @livewireStyles
         @fluxStyles
     </head>
-    <body>
-        {{ $slot }}
+    <body class="min-h-screen bg-white dark:bg-zinc-800">
+        <x-header />
+
+        <flux:main class="!py-0">
+            {{ $slot }}
+        </flux:main>
+
         @livewireScripts
+        @vite('resources/js/app.js')
         @fluxScripts
+        @stack('scripts')
     </body>
 </html>
