@@ -32,7 +32,11 @@
         <flux:navlist.item href="#" icon="information-circle">Help</flux:navlist.item>
         </flux:navlist>
     --}}
-    <x-theme-selector />
+    <flux:radio.group variant="segmented" x-model="$flux.appearance">
+        <flux:radio value="light" icon="sun" />
+        <flux:radio value="dark" icon="moon" />
+        <flux:radio value="system" icon="computer-desktop" />
+    </flux:radio.group>
     {{--
         <flux:dropdown class="max-lg:hidden" position="top" align="start">
         <flux:profile name="Olivia Martin" avatar="https://fluxui.dev/img/demo/user.png" />
@@ -50,7 +54,7 @@
 </flux:sidebar>
 
 <flux:header
-    class="block border-b border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-900 lg:hidden lg:bg-zinc-50"
+    class="block border-b border-zinc-200 bg-white lg:hidden lg:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900"
 >
     <flux:navbar class="w-full">
         <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
