@@ -1,4 +1,4 @@
-<flux:sidebar class="border-r border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900" sticky stashable>
+<flux:sidebar class="border-r border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950/50" sticky stashable>
     <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
     <flux:brand class="px-2 dark:hidden" name="Acme Inc." href="#" logo="https://fluxui.dev/img/demo/logo.png" />
@@ -11,7 +11,7 @@
 
     <flux:navlist>
         <flux:navlist.group class="overflow-hidden" heading="Favoris" expandable>
-            <flux:navlist.item href="#">Marketing site</flux:navlist.item>
+            <flux:navlist.item href="#" current>Marketing site</flux:navlist.item>
             <flux:navlist.item href="#">Android app</flux:navlist.item>
             <flux:navlist.item href="#">Brand guidelines Brand guidelines Brand guidelines</flux:navlist.item>
         </flux:navlist.group>
