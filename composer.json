@@ -8,7 +8,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
+        "echolabsdev/prism": "^0.21.1",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "league/flysystem-path-prefixing": "^3.28",
@@ -20,7 +21,6 @@
         "wire-elements/modal": "^2.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.14",
         "barryvdh/laravel-ide-helper": "^3.2",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^2.9",
