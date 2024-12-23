@@ -12,7 +12,7 @@
         @livewireStyles
         @fluxStyles
     </head>
-    <body class="min-h-screen bg-white dark:bg-zinc-800">
+    <body class="min-h-screen bg-white text-zinc-800 dark:!bg-zinc-900">
         <x-header />
 
         <flux:main class="!py-0">
