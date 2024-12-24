@@ -13,7 +13,13 @@
             <!-- Password -->
             <flux:field>
                 <flux:label>{{ __('Password') }}</flux:label>
-                <flux:input type="password" wire:model="form.password" required autocomplete="current-password" />
+                <flux:input
+                    type="password"
+                    wire:model="form.password"
+                    viewable
+                    required
+                    autocomplete="current-password"
+                />
                 <flux:error name="form.password" />
             </flux:field>
             <!-- Remember Me -->
