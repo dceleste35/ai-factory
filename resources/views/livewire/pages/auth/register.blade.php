@@ -47,7 +47,7 @@
                 {{ __('Register') }}
             </flux:button>
             <a
-                class="select-none text-sm font-medium text-zinc-800 underline dark:text-white"
+                class="w-full select-none text-end text-sm font-medium text-zinc-800 underline dark:text-white"
                 href="{{ route('login') }}"
                 wire:navigate
             >

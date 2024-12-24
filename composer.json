@@ -18,6 +18,7 @@
         "livewire/flux": "^1.0",
         "livewire/flux-pro": "^1.0",
         "livewire/livewire": "^3.5",
+        "livewire/volt": "^1.6",
         "stancl/tenancy": "^3.8",
         "wire-elements/modal": "^2.0"
     },

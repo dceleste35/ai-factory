@@ -21,6 +21,12 @@
             </flux:radio.group>
         </div>
 
+        <div class="fixed left-0 top-0 z-50 p-4 md:p-2">
+            @if (Route::has('login'))
+                <livewire:welcome.navigation />
+            @endif
+        </div>
+
         <div class="flex min-h-screen flex-col items-center bg-zinc-50 pt-6 sm:justify-center sm:pt-0 dark:bg-zinc-800">
             <div>
                 <div class="dark:hidden">

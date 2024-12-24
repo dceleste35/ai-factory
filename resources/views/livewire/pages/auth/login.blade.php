@@ -1,4 +1,4 @@
-<div>
+<div class="space-y-4">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -10,6 +10,7 @@
                 <flux:input type="email" required autocomplete="username" autofocus wire:model="form.email" />
                 <flux:error name="form.email" />
             </flux:field>
+
             <!-- Password -->
             <flux:field>
                 <flux:label>{{ __('Password') }}</flux:label>
@@ -33,7 +34,7 @@
 
             @if (Route::has('password.request'))
                 <a
-                    class="select-none text-sm font-medium text-zinc-800 underline dark:text-white"
+                    class="w-full select-none text-end text-sm font-medium text-zinc-800 underline dark:text-white"
                     href="{{ route('password.request') }}"
                     wire:navigate
                 >
@@ -42,4 +43,8 @@
             @endif
         </div>
     </form>
+    <flux:separator text="ou" />
+    <flux:button class="w-full" type="submit" icon="google">
+        <spanc>Continuer avec Google</spanc>
+    </flux:button>
 </div>
