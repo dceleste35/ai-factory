@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Livewire\Profile;
 
 use Illuminate\Support\Facades\Auth;
@@ -10,7 +8,7 @@ use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
 use Livewire\Component;
 
-final class UpdatePasswordForm extends Component
+class UpdatePasswordForm extends Component
 {
     public string $current_password = '';
 

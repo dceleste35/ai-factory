@@ -1,14 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Livewire\Profile;
 
 use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
-final class DeleteUserForm extends Component
+class DeleteUserForm extends Component
 {
     public string $password = '';
 

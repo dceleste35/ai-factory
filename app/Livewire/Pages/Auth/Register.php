@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Livewire\Pages\Auth;
 
 use App\Models\User;
@@ -13,7 +11,7 @@ use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 #[Layout('components.layouts.guest')]
-final class Register extends Component
+class Register extends Component
 {
     public string $name = '';
 

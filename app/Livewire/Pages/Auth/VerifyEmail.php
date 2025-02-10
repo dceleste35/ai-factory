@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Livewire\Pages\Auth;
 
 use App\Livewire\Actions\Logout;
@@ -11,7 +9,7 @@ use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 #[Layout('components.layouts.guest')]
-final class VerifyEmail extends Component
+class VerifyEmail extends Component
 {
     /**
      * Send an email verification notification to the user.

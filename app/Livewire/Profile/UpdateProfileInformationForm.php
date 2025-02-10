@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Livewire\Profile;
 
 use App\Models\User;
@@ -10,7 +8,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\Rule;
 use Livewire\Component;
 
-final class UpdateProfileInformationForm extends Component
+class UpdateProfileInformationForm extends Component
 {
     public string $name = '';
 

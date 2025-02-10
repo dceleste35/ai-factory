@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Livewire\Pages\Auth;
 
 use Illuminate\Support\Facades\Auth;
@@ -9,8 +7,8 @@ use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
-#[Layout('layouts.guest')]
-final class ConfirmPassword extends Component
+#[Layout('components.layouts.guest')]
+class ConfirmPassword extends Component
 {
     public string $password = '';
 
@@ -36,6 +34,6 @@ final class ConfirmPassword extends Component
 
         session(['auth.password_confirmed_at' => time()]);
 
-        $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
+        $this->redirectIntended(default: route('home', absolute: false), navigate: true);
     }
 }
