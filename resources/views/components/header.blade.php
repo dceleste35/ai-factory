@@ -1,4 +1,8 @@
-<flux:sidebar class="border-r border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950/50" sticky stashable>
+<flux:sidebar
+    class="border-r border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 lg:dark:bg-zinc-950/50"
+    sticky
+    stashable
+>
     <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
     <flux:brand class="px-2 dark:hidden" name="Acme Inc." href="#" logo="https://fluxui.dev/img/demo/logo.png" />
@@ -37,20 +41,17 @@
         <flux:radio value="dark" icon="moon" />
         <flux:radio value="system" icon="computer-desktop" />
     </flux:radio.group>
-    {{--
-        <flux:dropdown class="max-lg:hidden" position="top" align="start">
-        <flux:profile name="Olivia Martin" avatar="https://fluxui.dev/img/demo/user.png" />
-        
+
+    <flux:dropdown class="max-lg:hidden" position="top" align="start">
+        <flux:profile :name="auth()->user()->name" avatar="https://fluxui.dev/img/demo/user.png" />
+
         <flux:menu>
-        <flux:menu.radio.group>
-        <flux:menu.radio checked>Olivia Martin</flux:menu.radio>
-        <flux:menu.radio>Truly Delta</flux:menu.radio>
-        </flux:menu.radio.group>
-        
-        <flux:menu.item icon="arrow-right-start-on-rectangle">Logout</flux:menu.item>
+            <flux:menu.item href="profile" icon="user">{{ __('Profile') }}</flux:menu.item>
+            <flux:menu.item href="settings" icon="cog-6-tooth">{{ __('Settings') }}</flux:menu.item>
+            <flux:menu.separator />
+            <flux:menu.item href="logout" icon="arrow-right-start-on-rectangle">{{ __('Logout') }}</flux:menu.item>
         </flux:menu>
-        </flux:dropdown>
-    --}}
+    </flux:dropdown>
 </flux:sidebar>
 
 <flux:header
@@ -61,21 +62,12 @@
 
         <flux:spacer />
 
-        {{--
-            <flux:dropdown position="top" align="start">
+        <flux:dropdown position="top" align="start">
             <flux:profile avatar="https://fluxui.dev/img/demo/user.png" />
-            b
+
             <flux:menu>
-            <flux:menu.radio.group>
-            <flux:menu.radio checked>Olivia Martin</flux:menu.radio>
-            <flux:menu.radio>Truly Delta</flux:menu.radio>
-            </flux:menu.radio.group>
-            
-            <flux:menu.separator />
-            
-            <flux:menu.item icon="arrow-right-start-on-rectangle">Logout</flux:menu.item>
+                <flux:menu.item icon="arrow-right-start-on-rectangle">{{ __('Logout') }}</flux:menu.item>
             </flux:menu>
-            </flux:dropdown>
-        --}}
+        </flux:dropdown>
     </flux:navbar>
 </flux:header>

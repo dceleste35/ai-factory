@@ -33,4 +33,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('confirm-password', ConfirmPassword::class)
         ->name('password.confirm');
+
+    Route::get('logout', function () {
+        auth()->logout();
+
+        return redirect()->route('login');
+    })->name('logout');
 });
