@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "blade-ui-kit/blade-heroicons": "^2.5",
         "echolabsdev/prism": "^0.21.1",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
@@ -17,6 +18,7 @@
         "livewire/flux": "^1.0",
         "livewire/flux-pro": "^1.0",
         "livewire/livewire": "^3.5",
+        "livewire/volt": "^1.6",
         "stancl/tenancy": "^3.8",
         "wire-elements/modal": "^2.0"
     },
@@ -25,6 +27,7 @@
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^2.9",
         "laravel-lang/common": "^6.4",
+        "laravel/breeze": "^2.3",
         "laravel/pail": "^1.1",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",

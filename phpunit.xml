@@ -19,6 +19,12 @@
         <include>
             <directory>app</directory>
         </include>
+        <exclude>
+            <directory>app/Filament</directory>
+            <directory>app/Livewire/Pages/Auth</directory>
+            <file>app/Http/Controllers/Auth/VerifyEmailController.php</file>
+            <file>app/Livewire/Forms/LoginForm.php</file>
+        </exclude>
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>

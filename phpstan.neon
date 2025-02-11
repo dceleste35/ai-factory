@@ -9,11 +9,14 @@ parameters:
     # Level 9 is the highest level
     level: 5
 
+    excludePaths:
+        - ./app/Http/Controllers/Auth/VerifyEmailController.php
+        - ./app/Livewire/Pages/Auth
+        - ./app/Livewire/Profile
+
 #    ignoreErrors:
 #        - '#PHPDoc tag @var#'
 #
-#    excludePaths:
-#        - ./*/*/FileToBeExcluded.php
 #
     inferPrivatePropertyTypeFromConstructor: true
     checkMissingIterableValueType: true

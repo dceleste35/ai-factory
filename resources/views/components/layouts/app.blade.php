@@ -15,7 +15,18 @@
     <body class="min-h-screen bg-white text-zinc-800 dark:!bg-zinc-900">
         <x-header />
 
-        <flux:main class="!py-0">
+        <flux:main>
+            @if (isset($title))
+                <flux:heading size="xl" level="1">{{ __($title) }}</flux:heading>
+            @endif
+
+            @if (isset($subHeading))
+                <flux:subheading class="mb-6" size="lg">{{ $subHeading }}</flux:subheading>
+                <flux:separator variant="subtle" />
+            @elseif (isset($title))
+                <flux:separator class="mt-6" variant="subtle" />
+            @endif
+
             {{ $slot }}
         </flux:main>
 
