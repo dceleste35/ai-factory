@@ -17,7 +17,7 @@ class ApiKeys extends Component
         ],
     ];
 
-    public function deleteApiKey(string $id)
+    public function deleteApiKey(string $id): void
     {
         //
     }
