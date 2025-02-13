@@ -19,7 +19,7 @@ class ApiKeys extends Component
 
     public function deleteApiKey(string $id)
     {
-        dd($id);
+        //
     }
 
     public function render()
