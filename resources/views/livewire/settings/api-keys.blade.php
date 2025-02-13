@@ -11,7 +11,7 @@
 
     <form class="mt-6 space-y-6" wire:submit.prevent="createApiKey">
         <div class="flex justify-between space-x-4">
-            <flux:select class="w-10" variant="listbox" searchable placeholder="Select LLM" wire:model="llm">
+            <flux:select class="w-10" variant="listbox" placeholder="Select LLM" wire:model="llm">
                 <flux:option>
                     <div class="flex items-center gap-2">
                         <flux:icon.shield-check class="text-zinc-400" variant="mini" />
